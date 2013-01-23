@@ -1,0 +1,30 @@
+{
+    "name": "consolejs",
+    "description": "ConsoleJS - Cross-browser console abstraction",
+    "version": "0.0.1",
+    "url": "",
+    "author": "Brett Fattori <bfattori@gmail.com>",
+    "main": "",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bfattori/consolejs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/bfattori/consolejs/issues"
+    },
+    "engines": {
+        "node": "*"
+    },
+    "scripts": {
+        "test": "grunt default --verbose"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "grunt-beautify": "0.1.1",
+        "grunt-contrib-copy": "0.3.2",
+        "grunt-mindirect": "0.1.3",
+        "grunt-jasmine-runner": "latest",
+        "grunt": "0.3.17"
+    }
+}

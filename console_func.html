@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Functional Testing for ConsoleJS</title>
+    <script type="text/javascript" src="console.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        ConsoleJS.debugLevel(DEBUGLEVEL_VERBOSE);
+        ConsoleJS.version();
+
+        ConsoleJS.log("This message was logged");
+        ConsoleJS.info("This message is info");
+        ConsoleJS.debug("This is a debug message");
+        ConsoleJS.warn("This is a warning");
+        ConsoleJS.error("This is an error message");
+
+        ConsoleJS.log("Logging with another", "argument");
+        ConsoleJS.debug("Debugging with an ", ['array','of','values']);
+        ConsoleJS.warn("Warning about", {'an': 'object', 'with': 'something', 'inside': 'it'});
+
+        var f = function() {};
+        f.prototype.foo = function() { alert(foo); };
+
+        var fInstance = new f();
+        ConsoleJS.info("Reporting on an ", fInstance);
+
+        ConsoleJS.pretty(true);
+        ConsoleJS.info("Pretty print ", fInstance);
+
+
+        // Do this last
+        ConsoleJS.assert(true === false, "This is an assertion!");
+
+    </script>
+</body>
+</html>
